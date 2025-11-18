@@ -1,113 +1,86 @@
-// Math.random()=> ek random number deta hai
-// Math.random() * 10 => 0 to 9.999999
-// Math.floor(Math.random() * 10) => 0 to 9
+// let h1=document.createElement("h1");
+// console.log(h1);
 
 
-// var a=Math.random();
-// console.log(a);
 
-// let a = Math.floor(Math.random() * 100);
-// console.log(a);
-
+// createElement 💡
 
 // let btn=document.querySelector("button");
-// let box=document.getElementById("box");
-
 // btn.addEventListener("click",function(){
-//     let c1=Math.floor(Math.random()*256);
-//     let c2=Math.floor(Math.random()*256);
-//     let c3=Math.floor(Math.random()*256);
-    
-//     box.style.backgroundColor=`rgb(${c1},${c2},${c3})`;
-//     box.innerHTML=`rgb(${c1},${c2},${c3})`;
+//   let h1=document.createElement("h1");
+//   h1.innerText="Hello world";
+//     console.log(h1);
+  
 // })
 
 
-// var arr=["red","green","blue","yellow","pink","purple","orange","brown","grey","black"];
+// appendChild 💡
 
-// var a=Math.floor(Math.random()*arr.length);
-// console.log(arr[a]);
+// let h1=document.createElement("h1");
+// h1.innerHTML="i love js";
+// let main=document.querySelector("main");
+// main.appendChild(h1);
+
+// let btn=document.createElement("button");
+// btn.innerText="New Button";
+// let main=document.querySelector("main");
+// main.appendChild(btn);
+ 
+// let div=document.createElement("div");
+// div.style.height="100px";
+// div.style.width="100px";
+// div.style.backgroundColor="Yellow";
+// let main=document.querySelector("main");
+// main.appendChild(div);
+
+// let btn=document.querySelector("button");
+// let main=document.querySelector("main");
+
+// btn.addEventListener("click",function(){
+//     let div=document.createElement("div");
+//     let x=Math.random()*100
+//     let y=Math.random()*100
+//     let c1=Math.floor(Math.random()*256);
+//     let c2=Math.floor(Math.random()*256);
+//     let c3=Math.floor(Math.random()*256);
+//     div.style.backgroundColor=`rgb(${c1},${c2},${c3})`;
+//     div.style.height="100px";
+//     div.style.width="100px";
+//     div.style.left= x+ '%';
+//     div.style.top= y+ '%';
+//     // div.style.backgroundColor="Yellow";
+//     div.style.position="absolute";
+//     main.appendChild(div);
+// })
 
 
-var arr=[
-    {
-        team:"CSK",
-        primaryColor:"yellow",
-        secondaryColor:"blue",
-        fullname:"Chennai Super Kings",
-        captain:"MS Dhoni"
-
-    },
-    {
-        team:"MI",
-        primaryColor:"blue",
-        secondaryColor:"gold",
-        fullname:"Mumbai Indians",
-        captain:"Rohit Sharma",
-
-
-    },
-    {
-        team:"RCB",
-        primaryColor:"red",
-        secondaryColor:"black",
-        fullname:"Royal Challengers Bangalore",
-        captain:"virat Kohli",
-
-    },
-    {
-        team:"KKR",
-        primaryColor:"purple",
-        secondaryColor:"gold",
-        fullname:"Kolkata Knight Riders",
-        captain:"Shreyas Iyer",
-
-    },
-    {
-        team:"SRH",
-        primaryColor:"orange",
-        secondaryColor:"red",
-        fullname:"Sunrisers Hyderabad",
-        captain:"Abhishek Sharma",
-    },
-    {
-        team:"PBKS",
-        primaryColor:"pink",
-        secondaryColor:"red",
-        fullname:"Punjab Kings",
-        captain:"Shikhar Dhawan",
-
-    },
-    {
-        team:"DC",
-        primaryColor:"blue",
-        secondaryColor:"red",
-        fullname:"Delhi Capitals",
-        captain:"Rishabh Pant",
-
-    },
-    {
-        team:"RR",
-        primaryColor:"blue",
-        secondaryColor:"pink",
-        fullname:"Rajasthan Royals",
-        captain:"Sanju Samson",
-
-    },
-]
-
-// let a=Math.floor(Math.random()*arr.length);
-// console.log(arr[a]);
 
 let btn=document.querySelector("button");
-let h1=document.querySelector("h1");
 let main=document.querySelector("main");
 
+let arr=['Hey! i am Manish Kumar','I love coding','Javascript is fun','DOM manipulation is easy','Lets create something new'];
 btn.addEventListener("click",function(){
-    let winner =arr[Math.floor(Math.random()*arr.length)];
-    h1.innerText=`${winner.fullname} won the IPL Trophy! Captain: ${winner.captain}`;
-    h1.style.color=winner.secondaryColor;
-    main.style.backgroundColor=winner.primaryColor;
+    let h1=document.createElement("h1");
+    let x=Math.random()*80
+    let y=Math.random()*80
+    let rot=Math.random()*360;
+    let scl=Math.random()*3;
+    h1.style.rotate=rot + 'deg';
+    h1.style.scale=scl;
+    h1.style.left= x+ '%';
+    h1.style.top= y+ '%';
+    let a= Math.floor(Math.random()*arr.length);
+    h1.innerHTML=arr[a];
+    h1.style.position="absolute";
 
-
+    main.appendChild(h1);
 })
+
+
+
+
+
+// CreateElement is used to create new element
+// appendChild is used to append it any parent.
+
+
