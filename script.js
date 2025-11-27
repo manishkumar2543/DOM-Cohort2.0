@@ -1,52 +1,17 @@
-// let box=document.querySelector("#box");
+// let h1=document.querySelectorAll("h1");
 
-// box.addEventListener("mouseenter",function(){
-//     console.log("enter..")
-//     box.style.backgroundC
-// })
+// h1[2].innerHTML='Change'
 
-// box.addEventListener("mouseleave",function(){
-//     console.log("left ...")
-// })
+// ParentNode ChildNode💡
 
-// let chutki=document.querySelector('img');
-// let msg=document.querySelector('h2 span');
-// let body=document.body
+// let outer= document.querySelector('.outer');
+// console.log(outer.childNodes[2])
 
 
-// chutki.addEventListener('mouseenter',function(){
-//     msg.innerHTML='chutki se door ho jaaa'
-//     body.style.backgroundColor='red'
-// })
+let allElem=document.querySelectorAll(".elem")
 
-// chutki.addEventListener('mouseleave',function(){
-//    msg.innerHTML='Good! Ab door hi rahna'
-//    body.style.backgroundColor='black'
-// })
-
-
-// let main=document.querySelector('.main');
-// let cursor=document.querySelector('#cursor');
-
-// main.addEventListener('mousemove',function(dets){
-//     cursor.style.left=dets.x + 'px'
-//     cursor.style.top=dets.y + 'px'
-// })
-
-let aud=new Audio('D.mp3')
-
-let h1=document.querySelector("h1");
-
-window.addEventListener('keydown',function(dets){
-    // console.log(dets.key)
-     h1.innerHTML=dets.key
-
-     if(h1.innerHTML===" "){
-        h1.innerHTML='SPC'
-     }
-     if(h1.innerHTML==="d"){
-        aud.play()
-     }
-   
-        
+allElem.forEach(function(elem){
+    // console.log(elem.innerHTML)
+    console.log(elem.childNodes[2])
+     console.log(elem.childNodes[3])
 })
