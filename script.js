@@ -1,17 +1,15 @@
-// let h1=document.querySelectorAll("h1");
+let allBtn=document.querySelectorAll('button')
 
-// h1[2].innerHTML='Change'
-
-// ParentNode ChildNode💡
-
-// let outer= document.querySelector('.outer');
-// console.log(outer.childNodes[2])
-
-
-let allElem=document.querySelectorAll(".elem")
-
-allElem.forEach(function(elem){
-    // console.log(elem.innerHTML)
-    console.log(elem.childNodes[2])
-     console.log(elem.childNodes[3])
+allBtn.forEach(function(elem){
+    elem.addEventListener('click',function(){
+    //    elem.innerHTML='Remove Friend'
+    if(elem.innerHTML=='Add Friend'){
+        elem.innerHTML='Remove Friend'
+    }
+    else{
+        elem.innerHTML='Add Friend'
+    }
+       
+    })
+    
 })
