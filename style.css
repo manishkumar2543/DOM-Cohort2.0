@@ -2,132 +2,27 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
-    color: white;
 }
 body,html{
+    width: 100%;
+    height: 100%;
+
+}
+body{
+    background-image: url(https://plus.unsplash.com/premium_photo-1668241683570-958ed3a9156e?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8YWxvbmV8ZW58MHx8MHx8fDA%3D);
+    background-size: cover;
+}
+:root{
+    --x:400px;
+    --y:400px;
+}
+.box{
     height: 100%;
     width: 100%;
-}
-main{
-    height: 100%;
-    width: 100%;
-    background: linear-gradient(to right bottom rgb(26,26,26),rgb(26,26,26),black);
-
-    padding: 20px;
-    
-    
-}
-.all-reels::-webkit-scrollbar{
-    display: none;
-}
-section{
-    height: 100%;
-    width: 400px;
-    background-color: black;
-    border-radius: 10px;
-    margin: auto;
-
- }
- .all-reels{
-    height: 100%;
-    width: 100%;
-    overflow: auto;
-    scroll-snap-type: y mandatory;
-  scroll-behavior: smooth;
-
-    
- }
- .all-reels::-webkit-scrollbar{
-    display: none;
- }
- .reel{
-    height: 100%;
-    width: 100%;
-    position: relative;
-    background-color: lightblue;
-    margin-bottom: 20px;
-    overflow: hidden;
-    border-radius: 10px;
-    scroll-snap-align:start;
-    scroll-snap-stop: always;
-
- }
-.reel video{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-
-}
-.reel .bottom{
-   padding: 30px 20px;
-   width: 100%;
-   background: linear-gradient(rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.111));
-   position: absolute;
-   bottom: 0;
-
-}
-.bottom .user{
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-bottom: 20px;
-}
-.bottom .user img{
-    height: 30px;
-    width: 30px;
-    border-radius: 50%;
-    object-fit: cover;
-}
-.bottom h3{
-    font-weight: 500;
-    font-size: 20px;
-}
-.bottom .user h4 {
-  font-size: 15px;
-  font-weight: 500;
-}
-.bottom .user button{
-    background-color: transparent;
-    padding: 2px 4px;
-    font-size: 12px;
-    font-weight: 500;
-    border-radius: 2px;
+    /* background-color: crimson; */
     border: 1px solid white;
-}
-.right{
- width: 40px;
- padding: 30px;
-position: absolute;
-right: 0;
-bottom: 10%;
-/* transform: translateX(100%); */
-display: flex;
-flex-direction: column;
-gap: 13px;
-overflow: hidden;
-background: linear-gradient(to right, transparent,rgba(0, 0, 0, 0.284));
+    /* background: linear-gradient(in oklab to right, white,red, purple); */
+    background: radial-gradient(150px at var(--x) var(--y), rgba(255, 255, 255, 0),rgba(12, 12, 13, 0.848));
+    /* background-color: var(--red); */
 
-
-}
-
-.right i{
-    font-size: 25px;
-    font-weight: 500;
-}
-.right h6{
-    font-size: 18px;
-    font-weight: 500;
-}
-.right > div{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-
-
-.love{
-    color: red;
 }
